@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background: #0a1a33;
+            /* Navy background */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-container {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background: #ffffff;
+            /* White card */
+            max-width: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+        
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0a1a33;
+            /* Navy border */
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: #0a1a33;
+            /* Navy text */
+        }
+        
+        .role {
+            color: #1c3f94;
+            /* Lighter navy */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .bio {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        
+        .section {
+            text-align: left;
+            margin-top: 20px;
+        }
+        
+        .section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #0a1a33;
+            border-bottom: 2px solid #0a1a33;
+            padding-bottom: 4px;
+        }
+        
+        .skills ul {
+            list-style: none;
+        }
+        
+        .skills li {
+            background: #e6ecff;
+            /* Soft navy tint */
+            padding: 8px;
+            margin-bottom: 6px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #0a1a33;
+        }
+        
+        .contact p {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        /* Responsive Design */
+        
+        @media (max-width: 600px) {
+            .profile-card {
+                padding: 20px;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-container">
+        <div class="profile-card">
+
+            <img src="image.jpg" alt="Profile Picture" class="profile-img">
+
+            <h1>Jayson Joel B. Canlas</h1>
+            <p class="role">Web Developer | Researcher</p>
+
+            <p class="bio">
+                Passionate about web development, system design, and academic research. Focused on building responsive and user-friendly websites.
+            </p>
+
+            <div class="section skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>C Programming</li>
+                    <li>Research Writing</li>
+                </ul>
+            </div>
+
+            <div class="section contact">
+                <h2>Contact</h2>
+                <p>Phone: 0919 382 7240</p>
+                <p>Email: Canlasjason2002@gmail.com</p>
+                <p>Location: Philippines</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
